@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Lunges",
+    "series":3,
+    "repetition": 14,
+    "imageUrl": "https://i.imgur.com/ygy5ie3.gif",
+    "description": "7 vezes de cada lado",
+    "recommendedWeight": 8
+  },
+  {
+    "name": "Romanian Deadlifts",
+    "series":3,
+    "repetition": 10,
+    "imageUrl": "https://i.imgur.com/uhw7lNP.gif",
+    "description": "Fique com a coluna reta!",
+    "recommendedWeight": 8
+  },
+  {
+    "name": "Bíceps lift",
+    "series":3,
+    "repetition": 10,
+    "imageUrl": "https://uploads.disquscdn.com/images/e29119c005f1953750ab3fef658a4336709db647a393483ea63d4191985ecf84.gif",
+    "description": "Fique com a coluna reta!",
+    "recommendedWeight": 10
+  },
+  {
+    "name": "Tríceps lift",
+    "series":3,
+    "repetition": 10,
+    "imageUrl": "https://uploads.disquscdn.com/images/d88b49028863825bccb5ad8288909cafb2e7acd0e65578c530ef994081c5bf5f.gif",
+    "description": "Fique com a coluna reta!",
+    "recommendedWeight": 8
+  },
+  {
+    "name": "Lunges",
+    "series":3,
+    "repetition": 14,
+    "imageUrl": "https://i.imgur.com/ygy5ie3.gif",
+    "description": "7 vezes de cada lado",
+    "recommendedWeight": 8
+  },
+  {
+    "name": "Romanian Deadlifts",
+    "series":3,
+    "repetition": 10,
+    "imageUrl": "https://i.imgur.com/uhw7lNP.gif",
+    "description": "Fique com a coluna reta!",
+    "recommendedWeight": 8
+  },
+  {
+    "name": "Bíceps lift",
+    "series":3,
+    "repetition": 10,
+    "imageUrl": "https://uploads.disquscdn.com/images/e29119c005f1953750ab3fef658a4336709db647a393483ea63d4191985ecf84.gif",
+    "description": "Fique com a coluna reta!",
+    "recommendedWeight": 10
+  },
+  {
+    "name": "Tríceps lift",
+    "series":3,
+    "repetition": 10,
+    "imageUrl": "https://uploads.disquscdn.com/images/d88b49028863825bccb5ad8288909cafb2e7acd0e65578c530ef994081c5bf5f.gif",
+    "description": "Fique com a coluna reta!",
+    "recommendedWeight": 8
+  }
+]
