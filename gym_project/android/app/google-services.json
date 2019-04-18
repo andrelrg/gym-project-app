@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "989600561050",
+    "firebase_url": "https://gym-project-2c4ef.firebaseio.com",
+    "project_id": "gym-project-2c4ef",
+    "storage_bucket": "gym-project-2c4ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989600561050:android:759e626d15022254",
+        "android_client_info": {
+          "package_name": "com.es2.gym_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "989600561050-ff1sgu3ovh81qn73ec6jebp6p74868ld.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.es2.gym_project",
+            "certificate_hash": "418d6dc1c1c3bf9ecc4f91da51fa0d2f748eebad"
+          }
+        },
+        {
+          "client_id": "989600561050-4grk2r7tcvoltsoaqqpcc2mpltjqc9pm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmhe2gZUa2BpAMCVoUZ6C3iWUGMwpGLCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "989600561050-4grk2r7tcvoltsoaqqpcc2mpltjqc9pm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -2,8 +2,12 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:google_sign_in/google_sign_in.dart';
+
 
 import 'models/exercise.dart';
+import 'services/auth.dart';
 import 'signin.dart';
 import 'exercices_list.dart';
 
@@ -56,20 +60,16 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         elevation: 0.0,
       ),
-      floatingActionButton: const SignInFab(),
-//      body: ExerciseList(_loadPosts(context)),
+      body: Center(child:
+        SignIn(
+          auth: Auth(
+            firebaseAuth: FirebaseAuth.instance,
+            googleSignIn: GoogleSignIn(),
+          )
+        ),
+    )
     );
   }
 
-  Stream<List<Exercise>> _loadPosts(BuildContext context) {
-    return DefaultAssetBundle.of(context)
-        .loadString('assets/mock_exercises.json')
-        .then<List<dynamic>>((String value) => json.decode(value))
-        .asStream()
-        .map(_convertToPosts);
-  }
 
-  List<Exercise> _convertToPosts(List<dynamic> data) {
-    return data.map((dynamic item) => Exercise.fromMap(item)).toList();
-  }
 }
