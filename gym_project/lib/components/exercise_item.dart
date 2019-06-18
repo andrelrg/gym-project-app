@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'models/exercise.dart';
+import 'package:gym_project/models/exercise.dart';
 
 
 //ExerciseItem This class is each Item that appears in the list

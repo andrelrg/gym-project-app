@@ -1,11 +1,7 @@
 import 'services/auth.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-
-import 'exercices_list.dart';
-import 'models/exercise.dart';
-import 'dart:convert';
-
+import 'domains/usuario.dart';
 
 class SignIn extends StatelessWidget {
   const SignIn({
@@ -23,36 +19,18 @@ class SignIn extends StatelessWidget {
     );
   }
 
-  void _handleSignIn(BuildContext context) {
-    auth.signInWithGoogle()
-        .then((FirebaseUser user) =>  Navigator.push(context, new MaterialPageRoute(builder: (context) =>
-    new Scaffold(
-      appBar: AppBar(
-        title: Center(
-          child: Text(""),
-        ),
-        elevation: 0.0,
-      ),
+  void _handleSignIn(BuildContext context) async {
+    Scaffold.of(context)
+        .showSnackBar(SnackBar(content: Text('Logando ..')));
+    await auth.signInWithGoogle().then((FirebaseUser user) =>
+      Navigator.pushReplacementNamed(
+        context,
+        '/register',
+        arguments: Usuario(user.email, user.photoUrl, user.displayName)
+      )
 
-      body: ExerciseList(_loadPosts(context)),
-    )
-    )
-    )
     );
 
-
-//     
   }
 }
 
-Stream<List<Exercise>> _loadPosts(BuildContext context) {
-  return DefaultAssetBundle.of(context)
-      .loadString('assets/mock_exercises.json')
-      .then<List<dynamic>>((String value) => json.decode(value))
-      .asStream()
-      .map(_convertToPosts);
-}
-
-List<Exercise> _convertToPosts(List<dynamic> data) {
-  return data.map((dynamic item) => Exercise.fromMap(item)).toList();
-}
