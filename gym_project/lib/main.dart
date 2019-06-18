@@ -1,16 +1,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:google_sign_in/google_sign_in.dart';
 import 'package:gym_project/routes/home.dart';
 import 'package:gym_project/routes/register.dart';
 
 import 'routes/exerciceList.dart';
 
-
-import 'services/auth.dart';
-import 'signin.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(

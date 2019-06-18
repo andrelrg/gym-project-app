@@ -1,7 +1,7 @@
-import 'services/auth.dart';
+import 'auth.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'domains/usuario.dart';
+import 'package:gym_project/domains/usuario.dart';
 
 class SignIn extends StatelessWidget {
   const SignIn({
